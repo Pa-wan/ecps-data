@@ -8,4 +8,4 @@ You might even try running the following command to get percentiles:
 
     docker run --rm -v "$(pwd)"/swarm-results/swarm-run-3000.raw:/tmp/target.digest mesosphere/rscript-curl Rscript -e 'quantile(read.table(file("/tmp/target.digest"))$V1, c(.10, .25, .50, .90, .99))'
 
-Copyright (C) 2016  Jeff Nickoloff - All in Geek Consulting, LLC
+Copyright &copy; 2016  Jeff Nickoloff - All in Geek Consulting, LLC
