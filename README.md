@@ -6,4 +6,4 @@ Each file contains newline delimited samples of the test described by the filena
 
 You might even try running the following command to get percentiles:
 
-    docker run --rm -v "$(pwd)"/swarm-run-3000.raw:/tmp/target.digest mesosphere/rscript-curl Rscript -e 'quantile(read.table(file("/tmp/target.digest"))$V1, c(.10, .25, .50, .90, .99))'
+    docker run --rm -v "$(pwd)"/swarm-results/swarm-run-3000.raw:/tmp/target.digest mesosphere/rscript-curl Rscript -e 'quantile(read.table(file("/tmp/target.digest"))$V1, c(.10, .25, .50, .90, .99))'
